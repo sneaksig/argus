@@ -1,6 +1,15 @@
 # arGUS - A multisensoral presence detector
 
-*strongly* inspired by DOI: 10.1109/ISC246665.2019.9071717
+## tl;dr
+ESP32 with sensors determines if there are people in a room or not
+
+## What? 
+Argus is software for an esp32 devboard such as the NodeMCU aimed to detect human presence in a room based on indirect readings such as temperature, air quality, relative air humidity and light level. The project has two stages. The first stage just measures Data and sends it to a backend via post request. This data gets collected for a span of time and is then used to train a TinyML model which will then replace the first stage firmware and (hopefully) allow the microcontroller to determine if the room is occupied or not on its own.
+
+## How 
+In order to differentiate datapoints that represent occupation from those that don't the first stage hardware features buttons that need to be pressed whenever someone enters the room. In order to account for user error -such as forgetting to press the button- a PIR sensor is installed to allow for error correction.
+
+arGUS is *strongly* inspired by DOI: 10.1109/ISC246665.2019.9071717
 
 ## Sensors and Hardware
 

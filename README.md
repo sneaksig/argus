@@ -41,6 +41,17 @@
 - [ ] calibrate digital read
 - [ ] add external interrupt on calibrated digital read
 
+### Button
+- [ ] add button module
+- [ ] implement two buttons
+	- [ ] one for incrementing number of people present
+	- [ ] one for decrementing
+- [ ] add button count to POST json
+
+### Movement sensor
+- [ ] add movement sensor module
+- [ ] init movement sensor
+
 ### WiFi 
 ### AsyncWebserver?
 no
